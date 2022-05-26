@@ -1,0 +1,33 @@
+{
+      "name": "Telegram-Bot",
+      "description": "An Anime themed Telegram group management bot.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "Bot"
+      ],   
+   "repository": "https://github.com/ankitkumarbh/schd-Bot",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+      {
+         "url": "heroku/python"
+      }
+   ],
+   "env": {
+      "REPO_URL": {
+         "description": "Input Repo Url.",
+         "required": true,
+         "value": ""
+      }
+      
+   }
+}
